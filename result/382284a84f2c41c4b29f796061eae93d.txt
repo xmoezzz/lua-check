@@ -1,0 +1,113 @@
+---------------------------
+backupConfigSet
+root_8
++++++++++++++++++++++++++++
+CALLI 6#9, (6#10), (7#1,8#1,9#1,10#0) =>[db.getAttribute]
+MOVE 12#0, 6#10
+MOVE 11#0,  
+MOVE 10#2, cd /tmp && tar -cf
+CONCAT 10#3, (10#2,11#0,12#0,13#0,14#0,15#0)
+CALLI 9#6, (9#7), (10#3) =>[os.execute]
+MOVE 15#2, @G@_SETTINGS_FILE#0
+MOVE 14#2, /pfrm2.0/bin/usrKlite openssl enc -aes-128-cbc -in 
+CONCAT 14#3, (14#2,15#2,16#1,17#1,18#0,19#0,20#0,21#0,22#0)
+CALLI 13#5, (13#6), (14#3) =>[os.execute]
+MOVE 15#3, @G@_SETTINGS_FILE#0
+MOVE 14#5, /bin/rm 
+CONCAT 14#6, (14#5,15#3,16#2)
+CALLI 13#11, (13#12), (14#6) =>[os.execute]
+CALLI 2#7, (2#8), (3#0,4#1,5#1,6#1) =>[db.getAttribute]
+MOVE @G@_fileName#0, 2#8
+MOVE 6#11, @G@_fileName#0
+MOVE 5#6,  
+MOVE 4#9, cd /tmp  && tar -cf
+CONCAT 4#10, (4#9,5#6,6#11,7#13,8#15,9#18)
+CALLI 3#11, (), (4#10) =>[adaptos.execute]
+CALLI 2#7, (2#8), (3#0,4#1,5#1,6#1) =>[db.getAttribute]
+MOVE @G@_fileName#0, 2#8
+MOVE 5#7, @G@_fileName#0
+MOVE 4#11, cd /tmp && /bin/cp 
+CONCAT 4#12, (4#11,5#7,6#12,7#14,8#16)
+CALLI 3#13, (), (4#12) =>[adaptos.execute]
+CALLI 3#15, (3#16), (4#13,5#8,6#13,7#15) =>[db.getAttribute]
+MOVE @G@_usbStatusCmd#0, 3#16
+MOVE 4#14, @G@_usbStatusCmd#0
+CONCAT 4#15, (4#14,5#9,6#14)
+CALLI 3#18, (), (4#15) =>[adaptos.execute]
+MOVE 5#10, @G@_SETTINGS_FILE#0
+MOVE 4#17, /bin/cp 
+CONCAT 4#18, (4#17,5#10,6#15,7#16,8#17)
+CALLI 3#22, (), (4#18) =>[adaptos.execute]
+CALLI 3#24, (3#25), (4#19,5#11,6#16,7#17) =>[db.getAttribute]
+MOVE @G@_usbStatusCmd#1, 3#25
+MOVE 4#20, @G@_usbStatusCmd#1
+CONCAT 4#21, (4#20,5#12,6#17)
+CALLI 3#27, (), (4#21) =>[adaptos.execute]
+CALLI 2#7, (2#8), (3#0,4#1,5#1,6#1) =>[db.getAttribute]
+MOVE @G@_fileName#0, 2#8
+MOVE 6#18, @G@_fileName#0
+MOVE 5#13,  
+MOVE 4#23, cd /tmp  && tar -cf
+CONCAT 4#24, (4#23,5#13,6#18,7#18,8#18,9#19)
+CALLI 3#31, (), (4#24) =>[adaptos.execute]
+CALLI 2#7, (2#8), (3#0,4#1,5#1,6#1) =>[db.getAttribute]
+MOVE @G@_fileName#0, 2#8
+MOVE 5#14, @G@_fileName#0
+MOVE 4#25, cd /tmp && /bin/cp 
+CONCAT 4#26, (4#25,5#14,6#19,7#19,8#19)
+CALLI 3#33, (), (4#26) =>[adaptos.execute]
+CALLI 3#35, (3#36), (4#27,5#15,6#20,7#20) =>[db.getAttribute]
+MOVE @G@_usbStatusCmd#2, 3#36
+MOVE 4#28, @G@_usbStatusCmd#2
+CONCAT 4#29, (4#28,5#16,6#21)
+CALLI 3#38, (), (4#29) =>[adaptos.execute]
+MOVE 5#17, @G@_SETTINGS_FILE#0
+MOVE 4#31, /bin/cp 
+CONCAT 4#32, (4#31,5#17,6#22,7#21,8#20)
+CALLI 3#42, (), (4#32) =>[adaptos.execute]
+CALLI 3#44, (3#45), (4#33,5#18,6#23,7#22) =>[db.getAttribute]
+MOVE @G@_usbStatusCmd#3, 3#45
+MOVE 4#34, @G@_usbStatusCmd#3
+CONCAT 4#35, (4#34,5#19,6#24)
+CALLI 3#47, (), (4#35) =>[adaptos.execute]
+---------------------------
+
+---------------------------
+restoreConfigSet
+root_11
++++++++++++++++++++++++++++
+CALLI 13#24, (13#25), (14#16,15#12,16#6,17#3) =>[db.getAttribute]
+MOVE 22#2, 13#25
+MOVE 21#3,  
+MOVE 7#7, out.cfg
+MOVE 8#11, 7#7
+MOVE 20#3, 8#11
+MOVE 19#3, /tmp/
+MOVE 18#3,  
+MOVE 17#4, cp -f
+CONCAT 17#5, (17#4,18#3,19#3,20#3,21#3,22#2)
+CALLI 16#8, (16#9), (17#5) =>[os.execute]
+CALLI 14#46, (14#47), (15#34,16#24,17#13,18#8) =>[db.getAttribute]
+MOVE 23#3, 14#47
+MOVE 22#6,  
+MOVE 9#4, out.cfg
+MOVE 10#7, 9#4
+MOVE 21#7, 10#7
+MOVE 20#8, /tmp/
+MOVE 19#8,  
+MOVE 18#9, cp -f
+CONCAT 18#10, (18#9,19#8,20#8,21#7,22#6,23#3)
+CALLI 17#15, (17#16), (18#10) =>[os.execute]
+CALLI 14#79, (14#80), (15#56,16#43,17#25,18#15) =>[db.getAttribute]
+MOVE 23#6, 14#80
+MOVE 22#9,  
+MOVE 9#5, out.cfg
+MOVE 10#9, 9#5
+MOVE 21#10, 10#9
+MOVE 20#13, /tmp/
+MOVE 19#13,  
+MOVE 18#16, cp -f
+CONCAT 18#17, (18#16,19#13,20#13,21#10,22#9,23#6)
+CALLI 17#27, (17#28), (18#17) =>[os.execute]
+---------------------------
+

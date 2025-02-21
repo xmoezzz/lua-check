@@ -1,0 +1,27 @@
+---------------------------
+backgroundImageUpload
+root_98
++++++++++++++++++++++++++++
+CALLI 6#3, (6#4), (7#1,8#1,9#0,10#0) =>[db.getAttribute]
+MOVE 9#1, 6#4
+MOVE 8#2, /flash/tmp/capPort/
+CONCAT 8#3, (8#2,9#1)
+CALLI 7#3, (), (8#3) =>[os.remove]
+---------------------------
+
+---------------------------
+headerImageUpload
+root_99
++++++++++++++++++++++++++++
+CALLI 8#4, (8#5), (9#2,10#1,11#0,12#1) =>[db.getAttribute]
+MOVE 11#1, 8#5
+MOVE 10#2, /flash/tmp/capPort/
+CONCAT 10#3, (10#2,11#1)
+CALLI 9#4, (), (10#3) =>[os.remove]
+CALLI 8#4, (8#5), (9#2,10#1,11#0,12#1) =>[db.getAttribute]
+MOVE 11#2, 8#5
+MOVE 10#4, /flash/tmp/login/
+CONCAT 10#5, (10#4,11#2)
+CALLI 9#7, (), (10#5) =>[os.remove]
+---------------------------
+

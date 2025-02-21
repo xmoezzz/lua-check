@@ -1,0 +1,23 @@
+---------------------------
+wcfTrialLicenseActivate
+root_7
++++++++++++++++++++++++++++
+MOVE 11#0, @G@_freeTrialTimeFile#0
+MOVE 10#0,  > 
+ADDRC 6#10, 6#9, 7776000.0
+MOVE 9#0, 6#10
+MOVE 8#2, echo 
+CONCAT 8#3, (8#2,9#0,10#0,11#0)
+CALLI 7#9, (), (8#3) =>[os.execute]
+MOVE 9#1, @G@_freeTrialFile#0
+MOVE 8#4, echo Activate > 
+CONCAT 8#5, (8#4,9#1)
+CALLI 7#11, (), (8#5) =>[os.execute]
+MOVE 5#5, @G@_freeTrialTimeFile#0
+CALLI 4#10, (4#11), (5#5,6#1) =>[io.open]
+MOVE 6#2, @G@_activationFile#0
+CALLI 5#7, (5#8), (6#2,7#0) =>[io.open]
+MOVE 8#6, @G@_freeTrialFile#0
+CALLI 7#13, (7#14), (8#6,9#2) =>[io.open]
+---------------------------
+

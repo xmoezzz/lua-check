@@ -1,0 +1,18 @@
+---------------------------
+<root>
+root
++++++++++++++++++++++++++++
+CALLI 2#48, (2#49), (3#24,4#2,5#2,6#2) =>[db.getAttribute]
+MOVE @G@_FIRMWARE_VERSION#0, 2#49
+MOVE 4#3, @G@_FIRMWARE_VERSION#0
+MOVE 3#25, echo 
+CONCAT 3#26, (3#25,4#3,5#3)
+CALLI 2#51, (), (3#26) =>[os.execute]
+CALLI 2#53, (2#54), (3#27,4#4,5#4,6#3) =>[db.getAttribute]
+MOVE @G@_UNIT_NAME#0, 2#54
+MOVE 4#7, @G@_UNIT_NAME#0
+MOVE 3#30, echo 
+CONCAT 3#31, (3#30,4#7,5#6)
+CALLI 2#61, (), (3#31) =>[os.execute]
+---------------------------
+

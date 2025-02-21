@@ -1,0 +1,21 @@
+---------------------------
+ddnsConfigSet
+root_35
++++++++++++++++++++++++++++
+MOVE 19#2, @G@_KEY_LOC#0
+MOVE 18#28, mkdir -p 
+CONCAT 18#29, (18#28,19#2)
+CALLI 17#23, (), (18#29) =>[os.execute]
+MOVE 21#0, @G@_KEY_LOC#0
+MOVE 20#2,  
+LOADPARAM 13#0, 13
+MOVE 19#3, 13#0
+MOVE 18#30, mv -f /tmp/
+CONCAT 18#31, (18#30,19#3,20#2,21#0,22#0,23#0)
+CALLI 17#25, (), (18#31) =>[os.execute]
+MOVE 19#9, @G@_KEY_LOC#0
+MOVE 18#40, rm -f 
+CONCAT 18#41, (18#40,19#9,20#4,21#1)
+CALLI 17#32, (), (18#41) =>[os.execute]
+---------------------------
+

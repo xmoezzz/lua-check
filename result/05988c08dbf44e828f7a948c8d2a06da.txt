@@ -1,0 +1,18 @@
+---------------------------
+interfaceSubnetCheck
+root_33
++++++++++++++++++++++++++++
+MOVE 13#11, @G@_russianPppoeFile#0
+CALLI 12#16, (12#17), (13#11,14#5) =>[io.open]
+MOVE 11#20, @G@_russianL2tpFile#0
+CALLI 10#53, (10#54), (11#20,12#21) =>[io.open]
+MOVE 11#33, @G@_russianPptpFile#0
+CALLI 10#59, (10#60), (11#33,12#28) =>[io.open]
+MOVE 13#62, @G@_russianPppoeFile#0
+CALLI 12#60, (12#61), (13#62,14#26) =>[io.open]
+MOVE 11#60, @G@_russianL2tpFile#0
+CALLI 10#92, (10#93), (11#60,12#65) =>[io.open]
+MOVE 11#73, @G@_russianPptpFile#0
+CALLI 10#98, (10#99), (11#73,12#72) =>[io.open]
+---------------------------
+

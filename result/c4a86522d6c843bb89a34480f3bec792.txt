@@ -1,0 +1,27 @@
+---------------------------
+action_wireless
+root_8
++++++++++++++++++++++++++++
+CALLI 13#16, (13#17), (14#13) =>[luci.http.formvalue]
+MOVE 11#17, 13#17
+MOVE 17#4, 11#17
+MOVE 16#7,  3 
+MOVE 7#3, ath0
+MOVE 15#9, 7#3
+MOVE 14#14, wps_api 
+CONCAT 14#15, (14#14,15#9,16#7,17#4)
+CALLN 13#18, (13#19), (14#15) =>[exec]
+CALLI 13#16, (13#17), (14#13) =>[luci.http.formvalue]
+MOVE 11#17, 13#17
+MOVE 19#0, 11#17
+MOVE 18#0,  
+MOVE 5#1, conf
+MOVE 17#6, 5#1
+MOVE 16#9,  
+MOVE 7#3, ath0
+MOVE 15#11, 7#3
+MOVE 14#17, wps_start 
+CONCAT 14#18, (14#17,15#11,16#9,17#6,18#0,19#0)
+CALLI 13#24, (13#25), (14#18) =>[io.popen]
+---------------------------
+

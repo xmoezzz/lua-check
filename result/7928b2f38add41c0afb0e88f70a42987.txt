@@ -1,0 +1,46 @@
+---------------------------
+<root>
+root
++++++++++++++++++++++++++++
+CALLI 5#19, (5#20), (6#6,7#6,8#6,9#0) =>[db.getAttribute]
+MOVE 7#8, 5#20
+CONCAT 7#9, (7#8,8#7)
+MOVE 9#2, 7#9
+CALLI 8#11, (), (9#2) =>[os.execute]
+CALLI 5#19, (5#20), (6#6,7#6,8#6,9#0) =>[db.getAttribute]
+MOVE 7#8, 5#20
+CONCAT 7#9, (7#8,8#7)
+MOVE 9#4, 7#9
+CALLI 8#15, (), (9#4) =>[os.execute]
+CALLI 5#19, (5#20), (6#6,7#6,8#6,9#0) =>[db.getAttribute]
+MOVE 7#8, 5#20
+CONCAT 7#9, (7#8,8#7)
+MOVE 9#6, 7#9
+CALLI 8#20, (), (9#6) =>[os.execute]
+CALLI 5#19, (5#20), (6#6,7#6,8#6,9#0) =>[db.getAttribute]
+MOVE 7#8, 5#20
+CONCAT 7#9, (7#8,8#7)
+MOVE 9#8, 7#9
+CALLI 8#25, (), (9#8) =>[os.execute]
+CALLI 5#19, (5#20), (6#6,7#6,8#6,9#0) =>[db.getAttribute]
+MOVE 7#8, 5#20
+CONCAT 7#9, (7#8,8#7)
+MOVE 9#10, 7#9
+CALLI 8#30, (), (9#10) =>[os.execute]
+CALLI 5#19, (5#20), (6#6,7#6,8#6,9#0) =>[db.getAttribute]
+MOVE 7#8, 5#20
+CONCAT 7#9, (7#8,8#7)
+MOVE 9#12, 7#9
+CALLI 8#34, (), (9#12) =>[os.execute]
+CALLI 5#19, (5#20), (6#6,7#6,8#6,9#0) =>[db.getAttribute]
+MOVE 7#8, 5#20
+CONCAT 7#9, (7#8,8#7)
+MOVE 9#14, 7#9
+CALLI 8#39, (), (9#14) =>[os.execute]
+CALLI 5#19, (5#20), (6#6,7#6,8#6,9#0) =>[db.getAttribute]
+MOVE 6#7, 5#20
+CONCAT 6#8, (6#7,7#7)
+MOVE 9#16, 6#8
+CALLI 8#42, (), (9#16) =>[os.execute]
+---------------------------
+

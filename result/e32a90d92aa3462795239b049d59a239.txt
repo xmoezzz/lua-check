@@ -1,0 +1,27 @@
+---------------------------
+sysStatusGet
+root_22
++++++++++++++++++++++++++++
+CALLI 1#6, (1#7), (2#2,3#1,4#0,5#0) =>[db.getAttribute]
+MOVE 5#1, 1#7
+CONCAT 5#2, (5#1,6#0,7#0,8#0)
+CALLI 4#2, (4#3), (5#2) =>[os.execute]
+CALLI 1#6, (1#7), (2#2,3#1,4#0,5#0) =>[db.getAttribute]
+MOVE 5#3, 1#7
+CONCAT 5#4, (5#3,6#1,7#1,8#1)
+CALLI 4#5, (4#6), (5#4) =>[os.execute]
+CALLI 1#6, (1#7), (2#2,3#1,4#0,5#0) =>[db.getAttribute]
+MOVE 5#5, 1#7
+CONCAT 5#6, (5#5,6#2,7#2,8#2)
+CALLI 4#8, (4#9), (5#6) =>[os.execute]
+CALLI 1#6, (1#7), (2#2,3#1,4#0,5#0) =>[db.getAttribute]
+MOVE 5#7, 1#7
+CONCAT 5#8, (5#7,6#3,7#3,8#3)
+CALLI 4#11, (4#12), (5#8) =>[os.execute]
+CALLI 3#12, (3#13), (4#14,5#10,6#5,7#4) =>[db.getAttribute]
+MOVE 1#8, 3#13
+MOVE 6#6, 1#8
+CONCAT 6#7, (6#6,7#5,8#4)
+CALLI 5#12, (5#13), (6#7) =>[os.execute]
+---------------------------
+

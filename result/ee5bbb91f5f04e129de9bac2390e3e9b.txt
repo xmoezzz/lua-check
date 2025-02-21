@@ -1,0 +1,28 @@
+---------------------------
+activeSelfCertDefault
+root_49
++++++++++++++++++++++++++++
+CALLI 5#3, (5#4), (6#4,7#2,8#2,9#1) =>[db.getAttribute]
+MOVE 12#6, 5#4
+MOVE 11#10, rm -f /var/certs/self/
+CONCAT 11#11, (11#10,12#6,13#6)
+CALLI 10#16, (), (11#11) =>[os.execute]
+CALLI 5#3, (5#4), (6#4,7#2,8#2,9#1) =>[db.getAttribute]
+MOVE 12#7, 5#4
+MOVE 11#12, rm -f /var/certs/self/
+CONCAT 11#13, (11#12,12#7,13#7)
+CALLI 10#18, (), (11#13) =>[os.execute]
+CALLI 5#3, (5#4), (6#4,7#2,8#2,9#1) =>[db.getAttribute]
+MOVE 13#8, 5#4
+MOVE 12#8, /var/certs/self/
+MOVE 11#14, cp 
+CONCAT 11#15, (11#14,12#8,13#8,14#3,15#2,16#3,17#3,18#3)
+CALLI 10#20, (), (11#15) =>[os.execute]
+CALLI 5#3, (5#4), (6#4,7#2,8#2,9#1) =>[db.getAttribute]
+MOVE 13#9, 5#4
+MOVE 12#9, /var/certs/self/
+MOVE 11#16, cp 
+CONCAT 11#17, (11#16,12#9,13#9,14#4,15#3,16#4,17#4,18#4)
+CALLI 10#22, (), (11#17) =>[os.execute]
+---------------------------
+

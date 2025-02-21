@@ -1,0 +1,16 @@
+---------------------------
+contentFilteringCfgSave
+root_1
++++++++++++++++++++++++++++
+CALLI 1#5, (1#6), (2#0,3#0,4#0,5#0) =>[db.getAttribute]
+MOVE 6#0, 1#6
+MOVE 5#1, echo 0 >
+CONCAT 5#2, (5#1,6#0)
+CALLI 4#2, (4#3), (5#2) =>[os.execute]
+CALLI 1#5, (1#6), (2#0,3#0,4#0,5#0) =>[db.getAttribute]
+MOVE 6#2, 1#6
+MOVE 5#5, echo 1 >
+CONCAT 5#6, (5#5,6#2)
+CALLI 4#7, (4#8), (5#6) =>[os.execute]
+---------------------------
+
